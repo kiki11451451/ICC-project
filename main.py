@@ -1,11 +1,11 @@
 import tkinter as tk
 from tkinter import ttk, messagebox, filedialog
-from ttkthemes import ThemedStyle  # 需安装ttkthemes库
+from ttkthemes import ThemedStyle  # 需安装ttkthemes库 [[6]]
 import random
 
 # 创建主窗口
 root = tk.Tk()
-root.title("GreenHub 环保交互站")  # 使用推荐名称
+root.title("GreenHub 环保交互站")
 root.geometry("800x500")
 root.resizable(False, False)
 
@@ -30,25 +30,7 @@ articles = {
             "【行动倡议】2025年全球禁用一次性塑料制品\n"
             "【企业实践】麦当劳推出纸吸管替代方案"
         ),
-        "image": "plastic.png"  # 假设存在图片资源
-    },
-    "绿色品牌实践": {
-        "content": (
-            "星巴克环保杯：减少30%碳排放\n"
-            "可口可乐PlantBottle™包装技术\n"
-            "宜家使用再生材料家具系列\n"
-            "苹果公司100%碳中和计划"
-        ),
-        "image": "green_brand.png"
-    },
-    "垃圾分类系统": {
-        "content": (
-            "日本分类体系：6大类+27子类\n"
-            "上海强制分类实施效果分析\n"
-            "智能垃圾桶：AI识别准确率达95%\n"
-            "垃圾发电厂VR参观指南"
-        ),
-        "image": "waste_sorting.png"
+        "image": "plastic.png"
     }
 }
 
@@ -68,6 +50,21 @@ def save_article():
             f.write(content)
         messagebox.showinfo("成功", "内容已保存")
 
+# 新增：读取文件函数 [[2]][[4]]
+def open_article():
+    file_path = filedialog.askopenfilename(
+        title="选择文本文件",
+        filetypes=[("文本文件", "*.txt"), ("所有文件", "*.*")]
+    )
+    if file_path:
+        try:
+            with open(file_path, "r", encoding="utf-8") as f:
+                content = f.read()
+                text_area.delete(1.0, tk.END)
+                text_area.insert(tk.END, content)
+        except Exception as e:
+            messagebox.showerror("错误", f"无法读取文件：{str(e)}")
+
 # 随机背景色函数（动态效果）
 def change_bg_color():
     color = random.choice(list(colors.values()))
@@ -80,7 +77,6 @@ def show_article(title):
     text_area.delete(1.0, tk.END)
     text_area.insert(tk.END, data["content"])
     
-    # 模拟图片加载（需替换真实图片路径）
     try:
         img = tk.PhotoImage(file=data["image"])
         image_label.configure(image=img)
@@ -98,8 +94,12 @@ def on_closing():
 toolbar = ttk.Frame(root)
 toolbar.pack(side=tk.TOP, fill=tk.X)
 
+# 工具栏按钮（新增open_article绑定 [[2]]）
 save_btn = ttk.Button(toolbar, text="保存内容", command=save_article)
 save_btn.pack(side=tk.LEFT, padx=5, pady=5)
+
+open_btn = ttk.Button(toolbar, text="打开文件", command=open_article)
+open_btn.pack(side=tk.LEFT, padx=5, pady=5)
 
 bg_color_btn = ttk.Button(toolbar, text="随机背景", command=change_bg_color)
 bg_color_btn.pack(side=tk.LEFT, padx=5, pady=5)
