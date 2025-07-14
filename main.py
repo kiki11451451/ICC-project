@@ -52,6 +52,126 @@ quiz_data = [
         "options": ["A. 使用一次性餐具", "B. 自带购物袋", "C. 每天开车上班", "D. 经常网购"],
         "answer": "B",
         "explanation": "自带购物袋可以减少塑料袋的使用，是一种环保的生活方式。"
+    },
+    {
+        "question": "节能灯相比普通灯泡的优点是？",
+        "options": ["A. 更亮", "B. 更省电", "C. 更便宜", "D. 更重"],
+        "answer": "B",
+        "explanation": "节能灯能耗低，使用寿命长，有助于节约能源。"
+    },
+    {
+        "question": "下列哪项是绿色出行方式？",
+        "options": ["A. 步行", "B. 开私家车", "C. 打出租车", "D. 摩托车"],
+        "answer": "A",
+        "explanation": "步行和骑自行车都是绿色出行方式，减少碳排放。"
+    },
+    {
+        "question": "废旧电池应如何处理？",
+        "options": ["A. 随意丢弃", "B. 与生活垃圾混合", "C. 投放到专用回收箱", "D. 埋在土里"],
+        "answer": "C",
+        "explanation": "废旧电池含有有害物质，应投放到专用回收箱。"
+    },
+    {
+        "question": "下列哪种行为有助于减少空气污染？",
+        "options": ["A. 烧垃圾", "B. 多乘坐公共交通", "C. 使用煤炭取暖", "D. 露天烧烤"],
+        "answer": "B",
+        "explanation": "乘坐公共交通可以减少汽车尾气排放，降低空气污染。"
+    },
+    {
+        "question": "纸张回收的主要目的是？",
+        "options": ["A. 节约木材资源", "B. 增加垃圾量", "C. 提高成本", "D. 制造塑料"],
+        "answer": "A",
+        "explanation": "回收纸张可以节约木材资源，保护森林。"
+    },
+    {
+        "question": "下列哪种包装最环保？",
+        "options": ["A. 塑料袋", "B. 一次性泡沫盒", "C. 可降解纸袋", "D. 金属罐"],
+        "answer": "C",
+        "explanation": "可降解纸袋易于分解，减少环境污染。"
+    },
+    {
+        "question": "节约用电的好处包括？",
+        "options": ["A. 降低电费", "B. 减少碳排放", "C. 保护环境", "D. 以上都是"],
+        "answer": "D",
+        "explanation": "节约用电既能省钱，又能减少碳排放，保护环境。"
+    },
+    {
+        "question": "下列哪种行为属于低碳生活？",
+        "options": ["A. 长时间开空调", "B. 随手关灯", "C. 用塑料袋购物", "D. 用一次性筷子"],
+        "answer": "B",
+        "explanation": "随手关灯可以减少能源浪费，是低碳生活的体现。"
+    },
+    {
+        "question": "废旧衣物最好的处理方式是？",
+        "options": ["A. 丢进垃圾桶", "B. 捐赠或回收", "C. 焚烧", "D. 埋在地下"],
+        "answer": "B",
+        "explanation": "捐赠或回收废旧衣物可以减少浪费，帮助他人。"
+    },
+    {
+        "question": "下列哪种能源属于可再生能源？",
+        "options": ["A. 石油", "B. 天然气", "C. 太阳能", "D. 煤炭"],
+        "answer": "C",
+        "explanation": "太阳能、风能、水能等都是可再生能源。"
+    },
+    {
+        "question": "绿色食品的特点是？",
+        "options": ["A. 无污染", "B. 高农药残留", "C. 添加剂多", "D. 价格低"],
+        "answer": "A",
+        "explanation": "绿色食品指生产过程中无污染、无有害添加剂。"
+    },
+    {
+        "question": "下列哪种行为有助于保护水资源？",
+        "options": ["A. 随意排放污水", "B. 节约用水", "C. 倒油进下水道", "D. 洗车用大量水"],
+        "answer": "B",
+        "explanation": "节约用水和防止水体污染有助于保护水资源。"
+    },
+    {
+        "question": "下列哪种垃圾属于有害垃圾？",
+        "options": ["A. 塑料瓶", "B. 废旧电池", "C. 果皮", "D. 纸箱"],
+        "answer": "B",
+        "explanation": "废旧电池含有有害物质，属于有害垃圾。"
+    },
+    {
+        "question": "减少塑料使用的有效方法是？",
+        "options": ["A. 多用一次性塑料袋", "B. 自带购物袋", "C. 用塑料瓶喝水", "D. 用塑料餐具"],
+        "answer": "B",
+        "explanation": "自带购物袋可以有效减少塑料袋的使用。"
+    },
+    {
+        "question": "下列哪种行为有助于节能减排？",
+        "options": ["A. 长时间开灯", "B. 合理使用空调", "C. 用煤炭取暖", "D. 用电热水器全天加热"],
+        "answer": "B",
+        "explanation": "合理使用空调可以减少能源消耗，降低排放。"
+    },
+    {
+        "question": "绿色出行的方式包括？",
+        "options": ["A. 步行", "B. 骑自行车", "C. 乘坐公共交通", "D. 以上都是"],
+        "answer": "D",
+        "explanation": "步行、骑自行车和乘坐公共交通都是绿色出行方式。"
+    },
+    {
+        "question": "下列哪种行为有助于减少温室气体排放？",
+        "options": ["A. 多开私家车", "B. 使用节能家电", "C. 烧煤取暖", "D. 乱丢垃圾"],
+        "answer": "B",
+        "explanation": "使用节能家电可以减少能源消耗，降低温室气体排放。"
+    },
+    {
+        "question": "废旧手机应如何处理？",
+        "options": ["A. 丢进普通垃圾桶", "B. 专业回收", "C. 埋在地下", "D. 随意丢弃"],
+        "answer": "B",
+        "explanation": "废旧手机含有有害物质，应交给专业回收机构处理。"
+    },
+    {
+        "question": "下列哪种行为有助于保护野生动物？",
+        "options": ["A. 购买野生动物制品", "B. 不随意捕捉野生动物", "C. 破坏栖息地", "D. 投喂野生动物"],
+        "answer": "B",
+        "explanation": "不随意捕捉和购买野生动物制品有助于保护野生动物。"
+    },
+    {
+        "question": "下列哪种行为有助于减少纸张浪费？",
+        "options": ["A. 双面打印", "B. 多用一次性纸杯", "C. 随意撕纸", "D. 用纸擦桌子"],
+        "answer": "A",
+        "explanation": "双面打印可以有效减少纸张浪费。"
     }
 ]
 
@@ -230,6 +350,12 @@ def check_answer(selected_answer):
         
         # 显示正确提示
         messagebox.showinfo(title="答对了！", message="恭喜你答对了，获得10积分！")
+        
+        # 检查是否达到100分
+        if user_points >= 100:
+            messagebox.showinfo("恭喜", "太棒了！你已经获得100积分！\n让我们去看看环保知识吧！")
+            notebook.select(0)  # 切换到第一个标签页（环保知识）
+            return  # 不再继续答题
     else:
         # 答错提示
         messagebox.showinfo(title="答错了", message=f"很遗憾答错了，正确答案是：{current_question['answer']}")
@@ -240,8 +366,8 @@ def check_answer(selected_answer):
     explanation_text.insert(tk.END, current_question["explanation"])
     explanation_text.config(state=tk.DISABLED)
     
-    # 启用开始按钮
-    start_button.config(state=tk.NORMAL)
+    # 1.5秒后自动切换到下一题
+    root.after(1500, start_quiz)
 
 # 绑定开始按钮事件
 start_button.config(command=start_quiz)
