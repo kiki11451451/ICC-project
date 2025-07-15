@@ -1,15 +1,84 @@
 # ICC-project
 ICC-file
 这个项目是关于ICC大会的文件
-#要想使用本代码
-#就要安装ttkthemes、PIL库
-#windows安装方法：pip install ttkthemes
-                pip install PIL
-#linux：
-  sudo apt update
-  sudo apt install python3-ttkthemes
-  sudo apt install python3-pil
-#mac:
-  pip install ttkthemes
-  pip install pil
-  
+
+
+EcoGuide 智能环保向导 - 作品介绍
+
+一、作品背景:
+在全球环境问题日益严峻的背景下，公众环保意识教育的需求与日俱增。本作品旨在	通过数字化手段，将环保知识传播与互动学习相结合，打造一个寓教于乐的环保教育	平台。
+
+二、作品目标:
+1. 通过问答游戏提升用户参与度
+2. 建立正向激励的积分系统
+3. 实现环保知识的本地化保存与分享
+
+三、创作动机:
+1.观察到传统环保宣传方式互动性不足
+2.希望将碎片化环保知识系统化整合
+3.尝试通过游戏化设计提升学习效果
+4.验证Python GUI开发的实际应用场景
+
+四、安装依赖
+pip install ttkthemes  # 美化主题
+pip install pillow     # 图像处理
+
+
+安装步骤
+1. 确保Python 3.6+环境
+2. 安装上述依赖库
+五、运行代码
+访问github上下载源码文件`main.py`
+链接为：https://github.com/kiki11451451/ICC-project／　　　
+　　　　https://gitcode.com/kiki150414/ICC-project/tree/main
+执行命令启动程序：
+python main.py
+
+
+六、 核心亮点
+1、交互设计
+2、双面板知识展示系统
+3、动态积分激励机制
+4、智能答题反馈（1.5秒自动刷新）
+5、跨页面跳转（积分达标自动跳转）
+
+七、内容架构
+graph T：
+[B]  文章系统
+   		B --> C[问答系统]
+    		 
+八、技术特色
+1. **主题化界面**：采用`ttkthemes`实现现代风格UI
+2. **数据持久化**：支持.txt格式的本地存取
+3. **异常处理**：文件操作错误捕获机制
+4. **响应式布局**：自适应窗口尺寸设计
+
+九、运行机制
+程序采用经典MVC架构：
+# 数据层
+articles = {...}  # 结构化知识库
+quiz_data = [...]  # 问答数据集
+
+# 视图层
+notebook = ttk.Notebook()  # 分页容器
+text_area = tk.Text()      # 富文本展示
+
+# 控制层
+def show_article(): ...    # 内容渲染
+def start_quiz(): ...      # 游戏逻辑
+十、扩展能力
+1、通过修改`articles`字典可扩展知识库
+2、在`quiz_data`列表中添加新题目即可更新题库
+3、支持自定义主题颜色（修改colors`字典）
+4、可扩展新的功能模块（如数据可视化面板）
+
+十一、教育价值
+1、本作品将环保知识的被动接收转化为主动探索，通过：
+2、即时正反馈机制（积分奖励）
+3、错题解析功能
+4、知识保存/分享能力
+十二、可视化进度追踪
+构建完整的环保学习闭环，适合作为中小学环保教育辅助工具。
+
+
+
