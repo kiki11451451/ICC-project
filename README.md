@@ -1,6 +1,7 @@
 # ICC-project
-ICC-file
-这个项目是关于ICC大会的文件
+
+ICC中国区文件
+
 
 
 EcoGuide 智能环保向导 - 作品介绍
@@ -21,8 +22,8 @@ EcoGuide 智能环保向导 - 作品介绍
 
 四、安装依赖
 pip install ttkthemes  # 美化主题
-pip install pillow     # 图像处理
-
+pip install pillow  # 图像处理
+pip install pygame#背景音乐
 
 安装步骤
 1. 确保Python 3.6+环境
@@ -79,6 +80,4 @@ def start_quiz(): ...      # 游戏逻辑
 4、知识保存/分享能力
 十二、可视化进度追踪
 构建完整的环保学习闭环，适合作为中小学环保教育辅助工具。
-
-
 
